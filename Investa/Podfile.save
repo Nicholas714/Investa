@@ -1,0 +1,6 @@
+target 'Investa' do
+  use_frameworks!
+
+  pod ''
+
+end

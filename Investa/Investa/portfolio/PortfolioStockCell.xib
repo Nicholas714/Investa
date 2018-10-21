@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.15" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.9"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PortfolioStockCell" id="7yZ-ER-7Bv" customClass="PortfolioStockCell" customModule="Investa" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="683" height="63"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="683" height="63"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="APPL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YOM-9N-5gh">
+                        <rect key="frame" x="16" y="13" width="75.5" height="35"/>
+                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="29"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="+1000%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XCh-XK-Rt5">
+                        <rect key="frame" x="606" y="13" width="65" height="14"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="3 stocks" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ayf-tN-H2S">
+                        <rect key="frame" x="607" y="33" width="63" height="16"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                        <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <color key="backgroundColor" red="0.20000000000000001" green="0.70980392156862748" blue="0.89803921568627454" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Ayf-tN-H2S" secondAttribute="trailing" constant="16" id="9UM-cZ-VPV"/>
+                <constraint firstItem="YOM-9N-5gh" firstAttribute="leading" secondItem="7yZ-ER-7Bv" secondAttribute="leading" constant="16" id="E4H-cR-zgn"/>
+                <constraint firstItem="XCh-XK-Rt5" firstAttribute="top" secondItem="7yZ-ER-7Bv" secondAttribute="top" constant="13" id="F9Y-WC-xQi"/>
+                <constraint firstItem="YOM-9N-5gh" firstAttribute="top" secondItem="7yZ-ER-7Bv" secondAttribute="top" constant="13" id="X0Z-wA-8pu"/>
+                <constraint firstAttribute="trailing" secondItem="XCh-XK-Rt5" secondAttribute="trailing" constant="16" id="fX9-dy-gzD"/>
+                <constraint firstItem="Ayf-tN-H2S" firstAttribute="top" secondItem="XCh-XK-Rt5" secondAttribute="bottom" id="k2Y-QF-Pps"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="9Ka-IF-bg7"/>
+            <size key="customSize" width="683" height="63"/>
+            <connections>
+                <outlet property="ownedStockCount" destination="Ayf-tN-H2S" id="4Fc-Ds-mwK"/>
+                <outlet property="percent" destination="XCh-XK-Rt5" id="DJ3-BL-t4v"/>
+                <outlet property="stockName" destination="YOM-9N-5gh" id="XNn-2i-T35"/>
+            </connections>
+            <point key="canvasLocation" x="546.39999999999998" y="51.724137931034484"/>
+        </collectionViewCell>
+    </objects>
+</document>

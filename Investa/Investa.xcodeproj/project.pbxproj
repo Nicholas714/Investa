@@ -1,0 +1,592 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		43383426217C1C41008A3AAC /* SearchStockCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43383425217C1C41008A3AAC /* SearchStockCell.xib */; };
+		434D5E36217ACB5C00FF5FA3 /* PortfolioGraphCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 434D5E35217ACB5C00FF5FA3 /* PortfolioGraphCell.xib */; };
+		434D5E38217ACB6F00FF5FA3 /* PortfolioStockCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 434D5E37217ACB6F00FF5FA3 /* PortfolioStockCell.xib */; };
+		434ED701217AC50200A8B197 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434ED700217AC50200A8B197 /* AppDelegate.swift */; };
+		434ED706217AC50200A8B197 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 434ED704217AC50200A8B197 /* Main.storyboard */; };
+		434ED708217AC50300A8B197 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 434ED707217AC50300A8B197 /* Assets.xcassets */; };
+		434ED70B217AC50300A8B197 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 434ED709217AC50300A8B197 /* LaunchScreen.storyboard */; };
+		43622FEF217ACC6D00700164 /* PortfolioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43622FEE217ACC6D00700164 /* PortfolioViewController.swift */; };
+		43622FF2217ACFC700700164 /* PortfolioGraphCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43622FF1217ACFC700700164 /* PortfolioGraphCell.swift */; };
+		43622FF4217AD85B00700164 /* PortfolioStockCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43622FF3217AD85B00700164 /* PortfolioStockCell.swift */; };
+		43622FF6217AE44200700164 /* GraphHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43622FF5217AE44200700164 /* GraphHeaderView.xib */; };
+		43622FF8217AE66600700164 /* GraphHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43622FF7217AE66600700164 /* GraphHeaderView.swift */; };
+		43622FFA217AF5FB00700164 /* UIColor+extra.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43622FF9217AF5FB00700164 /* UIColor+extra.swift */; };
+		43622FFC217AF7F400700164 /* Stock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43622FFB217AF7F400700164 /* Stock.swift */; };
+		438918C1217B70D000F8AE54 /* StockOptionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438918C0217B70D000F8AE54 /* StockOptionButton.swift */; };
+		439D0454217B7E74002CB86C /* StockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439D0453217B7E74002CB86C /* StockViewController.swift */; };
+		439D0456217B7FCA002CB86C /* StockLineGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439D0455217B7FCA002CB86C /* StockLineGraphView.swift */; };
+		43B6A4B8217BCA8900BBDF61 /* TransactionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B6A4B7217BCA8900BBDF61 /* TransactionsViewController.swift */; };
+		43B6A4BA217BCACE00BBDF61 /* TransactionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B6A4B9217BCACE00BBDF61 /* TransactionCell.swift */; };
+		43B6A543217BF7FC00BBDF61 /* SearchStockTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B6A542217BF7FC00BBDF61 /* SearchStockTableViewController.swift */; };
+		43C3EDEC217AFCE80088D963 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C3EDEB217AFCE80088D963 /* SignInViewController.swift */; };
+		43DFAE85217C1B4D00DA66E5 /* SearchStockCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DFAE84217C1B4D00DA66E5 /* SearchStockCell.swift */; };
+		AF346942499AC247D07D5346 /* Pods_Investa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ABB6390F8EEBF5B68F45000 /* Pods_Investa.framework */; };
+		D8045110217BC229003BF857 /* ScoreboardTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D804510F217BC229003BF857 /* ScoreboardTableViewController.swift */; };
+		D8045116217BC243003BF857 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8045115217BC243003BF857 /* UserTableViewCell.swift */; };
+		D86C1300217BA813004B53F6 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86C12FF217BA813004B53F6 /* Profile.swift */; };
+		D86C1302217BA9C7004B53F6 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86C1301217BA9C7004B53F6 /* APIManager.swift */; };
+		D86C1305217BB029004B53F6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86C1304217BB029004B53F6 /* LoginViewController.swift */; };
+		D86C1307217BB031004B53F6 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86C1306217BB031004B53F6 /* RegisterViewController.swift */; };
+		D86C1309217BB0CB004B53F6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86C1308217BB0CB004B53F6 /* User.swift */; };
+		D86C130B217BBD8A004B53F6 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86C130A217BBD8A004B53F6 /* Transaction.swift */; };
+		F2B44F60217C2CC80002D89B /* pic4.png in Resources */ = {isa = PBXBuildFile; fileRef = F2B44F56217C2CC50002D89B /* pic4.png */; };
+		F2B44F61217C2CC80002D89B /* pic6.png in Resources */ = {isa = PBXBuildFile; fileRef = F2B44F57217C2CC50002D89B /* pic6.png */; };
+		F2B44F62217C2CC80002D89B /* pic3.png in Resources */ = {isa = PBXBuildFile; fileRef = F2B44F58217C2CC60002D89B /* pic3.png */; };
+		F2B44F63217C2CC80002D89B /* pic1.png in Resources */ = {isa = PBXBuildFile; fileRef = F2B44F59217C2CC60002D89B /* pic1.png */; };
+		F2B44F64217C2CC80002D89B /* pic8.png in Resources */ = {isa = PBXBuildFile; fileRef = F2B44F5A217C2CC60002D89B /* pic8.png */; };
+		F2B44F65217C2CC80002D89B /* pic5.png in Resources */ = {isa = PBXBuildFile; fileRef = F2B44F5B217C2CC60002D89B /* pic5.png */; };
+		F2B44F66217C2CC80002D89B /* pic9.png in Resources */ = {isa = PBXBuildFile; fileRef = F2B44F5C217C2CC70002D89B /* pic9.png */; };
+		F2B44F67217C2CC80002D89B /* pic10.png in Resources */ = {isa = PBXBuildFile; fileRef = F2B44F5D217C2CC70002D89B /* pic10.png */; };
+		F2B44F68217C2CC80002D89B /* pic7.png in Resources */ = {isa = PBXBuildFile; fileRef = F2B44F5E217C2CC70002D89B /* pic7.png */; };
+		F2B44F69217C2CC80002D89B /* pic2.png in Resources */ = {isa = PBXBuildFile; fileRef = F2B44F5F217C2CC70002D89B /* pic2.png */; };
+		F2CB4821217C146200714F83 /* search.png in Resources */ = {isa = PBXBuildFile; fileRef = F2CB4820217C146100714F83 /* search.png */; };
+		F2CB4823217C147300714F83 /* leaderboards.png in Resources */ = {isa = PBXBuildFile; fileRef = F2CB4822217C147300714F83 /* leaderboards.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0332E6CD50001B1AEF081B9A /* Pods-Investa.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Investa.release.xcconfig"; path = "Pods/Target Support Files/Pods-Investa/Pods-Investa.release.xcconfig"; sourceTree = "<group>"; };
+		43383425217C1C41008A3AAC /* SearchStockCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchStockCell.xib; sourceTree = "<group>"; };
+		434D5E35217ACB5C00FF5FA3 /* PortfolioGraphCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PortfolioGraphCell.xib; sourceTree = "<group>"; };
+		434D5E37217ACB6F00FF5FA3 /* PortfolioStockCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PortfolioStockCell.xib; sourceTree = "<group>"; };
+		434ED6FD217AC50200A8B197 /* Investa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Investa.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		434ED700217AC50200A8B197 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		434ED705217AC50200A8B197 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		434ED707217AC50300A8B197 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		434ED70A217AC50300A8B197 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		434ED70C217AC50300A8B197 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43622FEE217ACC6D00700164 /* PortfolioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioViewController.swift; sourceTree = "<group>"; };
+		43622FF1217ACFC700700164 /* PortfolioGraphCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioGraphCell.swift; sourceTree = "<group>"; };
+		43622FF3217AD85B00700164 /* PortfolioStockCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioStockCell.swift; sourceTree = "<group>"; };
+		43622FF5217AE44200700164 /* GraphHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GraphHeaderView.xib; sourceTree = "<group>"; };
+		43622FF7217AE66600700164 /* GraphHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphHeaderView.swift; sourceTree = "<group>"; };
+		43622FF9217AF5FB00700164 /* UIColor+extra.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+extra.swift"; sourceTree = "<group>"; };
+		43622FFB217AF7F400700164 /* Stock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stock.swift; sourceTree = "<group>"; };
+		438918C0217B70D000F8AE54 /* StockOptionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockOptionButton.swift; sourceTree = "<group>"; };
+		439D0453217B7E74002CB86C /* StockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockViewController.swift; sourceTree = "<group>"; };
+		439D0455217B7FCA002CB86C /* StockLineGraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockLineGraphView.swift; sourceTree = "<group>"; };
+		43B6A4B7217BCA8900BBDF61 /* TransactionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsViewController.swift; sourceTree = "<group>"; };
+		43B6A4B9217BCACE00BBDF61 /* TransactionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionCell.swift; sourceTree = "<group>"; };
+		43B6A542217BF7FC00BBDF61 /* SearchStockTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchStockTableViewController.swift; sourceTree = "<group>"; };
+		43C3EDEB217AFCE80088D963 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		43DFAE84217C1B4D00DA66E5 /* SearchStockCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchStockCell.swift; sourceTree = "<group>"; };
+		6ABB6390F8EEBF5B68F45000 /* Pods_Investa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Investa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9EA782C133748369F8E92FDA /* Pods-Investa.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Investa.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Investa/Pods-Investa.debug.xcconfig"; sourceTree = "<group>"; };
+		D804510F217BC229003BF857 /* ScoreboardTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreboardTableViewController.swift; sourceTree = "<group>"; };
+		D8045115217BC243003BF857 /* UserTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
+		D86C12FF217BA813004B53F6 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		D86C1301217BA9C7004B53F6 /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		D86C1304217BB029004B53F6 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		D86C1306217BB031004B53F6 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		D86C1308217BB0CB004B53F6 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		D86C130A217BBD8A004B53F6 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		F2B44F56217C2CC50002D89B /* pic4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pic4.png; sourceTree = "<group>"; };
+		F2B44F57217C2CC50002D89B /* pic6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pic6.png; sourceTree = "<group>"; };
+		F2B44F58217C2CC60002D89B /* pic3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pic3.png; sourceTree = "<group>"; };
+		F2B44F59217C2CC60002D89B /* pic1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pic1.png; sourceTree = "<group>"; };
+		F2B44F5A217C2CC60002D89B /* pic8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pic8.png; sourceTree = "<group>"; };
+		F2B44F5B217C2CC60002D89B /* pic5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pic5.png; sourceTree = "<group>"; };
+		F2B44F5C217C2CC70002D89B /* pic9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pic9.png; sourceTree = "<group>"; };
+		F2B44F5D217C2CC70002D89B /* pic10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pic10.png; sourceTree = "<group>"; };
+		F2B44F5E217C2CC70002D89B /* pic7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pic7.png; sourceTree = "<group>"; };
+		F2B44F5F217C2CC70002D89B /* pic2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pic2.png; sourceTree = "<group>"; };
+		F2CB4820217C146100714F83 /* search.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = search.png; sourceTree = "<group>"; };
+		F2CB4822217C147300714F83 /* leaderboards.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = leaderboards.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		434ED6FA217AC50200A8B197 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF346942499AC247D07D5346 /* Pods_Investa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0EAD6A2DDF630E470ECA6C31 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9EA782C133748369F8E92FDA /* Pods-Investa.debug.xcconfig */,
+				0332E6CD50001B1AEF081B9A /* Pods-Investa.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		149B5158D4AC533A44656630 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6ABB6390F8EEBF5B68F45000 /* Pods_Investa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		434ED6F4217AC50200A8B197 = {
+			isa = PBXGroup;
+			children = (
+				434ED6FF217AC50200A8B197 /* Investa */,
+				434ED6FE217AC50200A8B197 /* Products */,
+				0EAD6A2DDF630E470ECA6C31 /* Pods */,
+				149B5158D4AC533A44656630 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		434ED6FE217AC50200A8B197 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				434ED6FD217AC50200A8B197 /* Investa.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		434ED6FF217AC50200A8B197 /* Investa */ = {
+			isa = PBXGroup;
+			children = (
+				D86C1303217BB012004B53F6 /* Authentication Flow */,
+				434ED700217AC50200A8B197 /* AppDelegate.swift */,
+				434ED704217AC50200A8B197 /* Main.storyboard */,
+				434ED707217AC50300A8B197 /* Assets.xcassets */,
+				434ED709217AC50300A8B197 /* LaunchScreen.storyboard */,
+				434ED70C217AC50300A8B197 /* Info.plist */,
+				43622FF0217ACFB300700164 /* portfolio */,
+				43B6A4BB217BCAD500BBDF61 /* transaction */,
+				43622FF9217AF5FB00700164 /* UIColor+extra.swift */,
+				D86C12FC217BA749004B53F6 /* Model */,
+				43C3EDEB217AFCE80088D963 /* SignInViewController.swift */,
+				438918C0217B70D000F8AE54 /* StockOptionButton.swift */,
+				439D0453217B7E74002CB86C /* StockViewController.swift */,
+				43B6A542217BF7FC00BBDF61 /* SearchStockTableViewController.swift */,
+				43DFAE84217C1B4D00DA66E5 /* SearchStockCell.swift */,
+				439D0455217B7FCA002CB86C /* StockLineGraphView.swift */,
+				D804510F217BC229003BF857 /* ScoreboardTableViewController.swift */,
+				D8045115217BC243003BF857 /* UserTableViewCell.swift */,
+				43383425217C1C41008A3AAC /* SearchStockCell.xib */,
+				F2CB4822217C147300714F83 /* leaderboards.png */,
+				F2CB4820217C146100714F83 /* search.png */,
+				F2B44F59217C2CC60002D89B /* pic1.png */,
+				F2B44F5F217C2CC70002D89B /* pic2.png */,
+				F2B44F58217C2CC60002D89B /* pic3.png */,
+				F2B44F56217C2CC50002D89B /* pic4.png */,
+				F2B44F5B217C2CC60002D89B /* pic5.png */,
+				F2B44F57217C2CC50002D89B /* pic6.png */,
+				F2B44F5E217C2CC70002D89B /* pic7.png */,
+				F2B44F5A217C2CC60002D89B /* pic8.png */,
+				F2B44F5C217C2CC70002D89B /* pic9.png */,
+				F2B44F5D217C2CC70002D89B /* pic10.png */,
+			);
+			path = Investa;
+			sourceTree = "<group>";
+		};
+		43622FF0217ACFB300700164 /* portfolio */ = {
+			isa = PBXGroup;
+			children = (
+				434D5E35217ACB5C00FF5FA3 /* PortfolioGraphCell.xib */,
+				434D5E37217ACB6F00FF5FA3 /* PortfolioStockCell.xib */,
+				43622FF5217AE44200700164 /* GraphHeaderView.xib */,
+				43622FEE217ACC6D00700164 /* PortfolioViewController.swift */,
+				43622FF1217ACFC700700164 /* PortfolioGraphCell.swift */,
+				43622FF3217AD85B00700164 /* PortfolioStockCell.swift */,
+				43622FF7217AE66600700164 /* GraphHeaderView.swift */,
+			);
+			path = portfolio;
+			sourceTree = "<group>";
+		};
+		43B6A4BB217BCAD500BBDF61 /* transaction */ = {
+			isa = PBXGroup;
+			children = (
+				43B6A4B7217BCA8900BBDF61 /* TransactionsViewController.swift */,
+				43B6A4B9217BCACE00BBDF61 /* TransactionCell.swift */,
+			);
+			path = transaction;
+			sourceTree = "<group>";
+		};
+		D86C12FC217BA749004B53F6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D86C1301217BA9C7004B53F6 /* APIManager.swift */,
+				43622FFB217AF7F400700164 /* Stock.swift */,
+				D86C12FF217BA813004B53F6 /* Profile.swift */,
+				D86C1308217BB0CB004B53F6 /* User.swift */,
+				D86C130A217BBD8A004B53F6 /* Transaction.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D86C1303217BB012004B53F6 /* Authentication Flow */ = {
+			isa = PBXGroup;
+			children = (
+				D86C1304217BB029004B53F6 /* LoginViewController.swift */,
+				D86C1306217BB031004B53F6 /* RegisterViewController.swift */,
+			);
+			path = "Authentication Flow";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		434ED6FC217AC50200A8B197 /* Investa */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 434ED70F217AC50300A8B197 /* Build configuration list for PBXNativeTarget "Investa" */;
+			buildPhases = (
+				0BCF49D88E6B10C5850E2858 /* [CP] Check Pods Manifest.lock */,
+				434ED6F9217AC50200A8B197 /* Sources */,
+				434ED6FA217AC50200A8B197 /* Frameworks */,
+				434ED6FB217AC50200A8B197 /* Resources */,
+				50A1DB15F94349294B78D96A /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Investa;
+			productName = Investa;
+			productReference = 434ED6FD217AC50200A8B197 /* Investa.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		434ED6F5217AC50200A8B197 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = hackgt;
+				TargetAttributes = {
+					434ED6FC217AC50200A8B197 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 434ED6F8217AC50200A8B197 /* Build configuration list for PBXProject "Investa" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 434ED6F4217AC50200A8B197;
+			productRefGroup = 434ED6FE217AC50200A8B197 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				434ED6FC217AC50200A8B197 /* Investa */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		434ED6FB217AC50200A8B197 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2B44F66217C2CC80002D89B /* pic9.png in Resources */,
+				434ED70B217AC50300A8B197 /* LaunchScreen.storyboard in Resources */,
+				F2B44F68217C2CC80002D89B /* pic7.png in Resources */,
+				F2B44F60217C2CC80002D89B /* pic4.png in Resources */,
+				F2B44F62217C2CC80002D89B /* pic3.png in Resources */,
+				43383426217C1C41008A3AAC /* SearchStockCell.xib in Resources */,
+				F2CB4821217C146200714F83 /* search.png in Resources */,
+				F2B44F64217C2CC80002D89B /* pic8.png in Resources */,
+				434ED708217AC50300A8B197 /* Assets.xcassets in Resources */,
+				F2B44F63217C2CC80002D89B /* pic1.png in Resources */,
+				434ED706217AC50200A8B197 /* Main.storyboard in Resources */,
+				F2B44F67217C2CC80002D89B /* pic10.png in Resources */,
+				F2B44F69217C2CC80002D89B /* pic2.png in Resources */,
+				F2B44F61217C2CC80002D89B /* pic6.png in Resources */,
+				434D5E36217ACB5C00FF5FA3 /* PortfolioGraphCell.xib in Resources */,
+				F2B44F65217C2CC80002D89B /* pic5.png in Resources */,
+				43622FF6217AE44200700164 /* GraphHeaderView.xib in Resources */,
+				F2CB4823217C147300714F83 /* leaderboards.png in Resources */,
+				434D5E38217ACB6F00FF5FA3 /* PortfolioStockCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0BCF49D88E6B10C5850E2858 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Investa-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		50A1DB15F94349294B78D96A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Investa/Pods-Investa-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Investa/Pods-Investa-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		434ED6F9217AC50200A8B197 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D86C130B217BBD8A004B53F6 /* Transaction.swift in Sources */,
+				43B6A4B8217BCA8900BBDF61 /* TransactionsViewController.swift in Sources */,
+				43DFAE85217C1B4D00DA66E5 /* SearchStockCell.swift in Sources */,
+				D8045116217BC243003BF857 /* UserTableViewCell.swift in Sources */,
+				43622FF8217AE66600700164 /* GraphHeaderView.swift in Sources */,
+				D86C1300217BA813004B53F6 /* Profile.swift in Sources */,
+				434ED701217AC50200A8B197 /* AppDelegate.swift in Sources */,
+				43622FFA217AF5FB00700164 /* UIColor+extra.swift in Sources */,
+				43622FFC217AF7F400700164 /* Stock.swift in Sources */,
+				43B6A543217BF7FC00BBDF61 /* SearchStockTableViewController.swift in Sources */,
+				D86C1309217BB0CB004B53F6 /* User.swift in Sources */,
+				D86C1305217BB029004B53F6 /* LoginViewController.swift in Sources */,
+				D86C1307217BB031004B53F6 /* RegisterViewController.swift in Sources */,
+				43C3EDEC217AFCE80088D963 /* SignInViewController.swift in Sources */,
+				43B6A4BA217BCACE00BBDF61 /* TransactionCell.swift in Sources */,
+				D8045110217BC229003BF857 /* ScoreboardTableViewController.swift in Sources */,
+				D86C1302217BA9C7004B53F6 /* APIManager.swift in Sources */,
+				439D0454217B7E74002CB86C /* StockViewController.swift in Sources */,
+				43622FF4217AD85B00700164 /* PortfolioStockCell.swift in Sources */,
+				43622FEF217ACC6D00700164 /* PortfolioViewController.swift in Sources */,
+				43622FF2217ACFC700700164 /* PortfolioGraphCell.swift in Sources */,
+				438918C1217B70D000F8AE54 /* StockOptionButton.swift in Sources */,
+				439D0456217B7FCA002CB86C /* StockLineGraphView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		434ED704217AC50200A8B197 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				434ED705217AC50200A8B197 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		434ED709217AC50300A8B197 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				434ED70A217AC50300A8B197 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		434ED70D217AC50300A8B197 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		434ED70E217AC50300A8B197 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		434ED710217AC50300A8B197 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9EA782C133748369F8E92FDA /* Pods-Investa.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VG8HJ8DZBZ;
+				INFOPLIST_FILE = Investa/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = investa.Investa;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		434ED711217AC50300A8B197 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0332E6CD50001B1AEF081B9A /* Pods-Investa.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VG8HJ8DZBZ;
+				INFOPLIST_FILE = Investa/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = investa.Investa;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		434ED6F8217AC50200A8B197 /* Build configuration list for PBXProject "Investa" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				434ED70D217AC50300A8B197 /* Debug */,
+				434ED70E217AC50300A8B197 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		434ED70F217AC50300A8B197 /* Build configuration list for PBXNativeTarget "Investa" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				434ED710217AC50300A8B197 /* Debug */,
+				434ED711217AC50300A8B197 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 434ED6F5217AC50200A8B197 /* Project object */;
+}
